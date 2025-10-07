@@ -15,8 +15,12 @@ This project demonstrates a Build Server compiles and packages a Java web applic
     Apache Maven 3.8.7
 
     Git
-<img width="923" height="73" alt="Screenshot 2025-10-07 171355" src="https://github.com/user-attachments/assets/e9708bd5-4d0e-45b5-aa09-629ff54319a8" />
+
+<img width="1188" height="568" alt="Image" src="https://github.com/user-attachments/assets/f7749017-4aa9-47ba-8f3e-914aa6751cb5" />
+
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d298ef53-e97c-4f01-aa7b-747a9e734769" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3503ec30-fe23-4153-b1a5-d5c8d8eb5431" />
 
 **Web Server:**
 
@@ -25,8 +29,6 @@ This project demonstrates a Build Server compiles and packages a Java web applic
     GlassFish Server 5.1.0
 
     Java (to run GlassFish)
-
-<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d298ef53-e97c-4f01-aa7b-747a9e734769" />
 
 **Network:**
 
@@ -154,4 +156,5 @@ Now you will be able to acess the application
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/10588961-b338-48f6-90ba-ca518508944f" />
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/39eeb8f2-5776-4bb8-ba31-066e36a15ee3" />
+
 
