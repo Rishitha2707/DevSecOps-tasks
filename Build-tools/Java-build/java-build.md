@@ -4,7 +4,8 @@ Building and Deploying a Java Web Application using Maven and Apache Tomcat
 This project demonstrates how to build a Java web application using Apache Maven on a build server, generate a .war (Web Application Archive) file, and then deploy the artifact to Apache Tomcat running on a web server.
 
 
-2. Requirements
+## 2. Requirements
+
 | Component     | Version      | Purpose                                     |
 | ------------- | ------------ | ------------------------------------------- |
 | Java (JDK)    | 17           | Required for Maven and Tomcat               |
@@ -13,6 +14,7 @@ This project demonstrates how to build a Java web application using Apache Maven
 | Git           | Latest       | Version control system                      |
 | SCP / SSH     | -            | To transfer build artifacts between servers |
 | Ports         | 22, 8080     | To access SSH and tomcat.                   |
+
 
 Server Setup
 | Server       | Role                        | Example Hostname / IP     |
