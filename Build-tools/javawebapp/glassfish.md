@@ -1,10 +1,12 @@
-<img width="923" height="73" alt="Screenshot 2025-10-07 171355" src="https://github.com/user-attachments/assets/e9708bd5-4d0e-45b5-aa09-629ff54319a8" />Project: CI/CD Pipeline for Java Web Application with Maven and GlassFish
-Synopsis
+**Project: Java Web Application with Maven and GlassFish**
+
+**Synopsis**
 This project demonstrates a Build Server compiles and packages a Java web application into a WAR file using Apache Maven (with Java 8). The resulting artifact is then securely transferred to a Web Server, where it is deployed and hosted on the GlassFish 5 application server. This process automates the build and deployment stages, showcasing a core DevOps workflow.
 
-Requirements
+**Requirements**
+------------------
 
-Build Server:
+**Build Server:**
 
     Ubuntu 24.04 LTS
 
@@ -13,10 +15,10 @@ Build Server:
     Apache Maven 3.8.7
 
     Git
-
+<img width="923" height="73" alt="Screenshot 2025-10-07 171355" src="https://github.com/user-attachments/assets/e9708bd5-4d0e-45b5-aa09-629ff54319a8" />
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d298ef53-e97c-4f01-aa7b-747a9e734769" />
 
-Web Server:
+**Web Server:**
 
     Ubuntu 24.04 LTS
 
@@ -26,7 +28,7 @@ Web Server:
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d298ef53-e97c-4f01-aa7b-747a9e734769" />
 
-Network:
+**Network:**
 
     SSH access between servers.
 
@@ -34,10 +36,11 @@ Network:
 
 
 
-Implementation Steps
+**Implementation Steps**
+-----------------------------
 
 
-Phase 1: Build Server Setup
+**Phase 1: Build Server Setup**
 
 1. Installing Java 8
 The build server required a specific version of Java. Java 8 was installed using apt.
@@ -73,7 +76,7 @@ The build was successful, and the JavaWebApp.war file was generated in the targe
 
 <img width="735" height="65" alt="Image" src="https://github.com/user-attachments/assets/95b613f4-5a8f-419f-b8eb-fb4af8f832e7" />
 
-Phase 2: Web Server Setup
+**Phase 2: Web Server Setup**
 
 1. Installing and Configuring GlassFish
 
@@ -113,7 +116,7 @@ The GlassFish application server was started using the asadmin tool.
 output should be:
 <img width="1919" height="617" alt="Image" src="https://github.com/user-attachments/assets/e522ecda-1977-4d66-8328-adc04e6ecf41" />
 
-Phase 3: Artifact Transfer and Deployment
+**Phase 3: Artifact Transfer and Deployment**
 
 1. Transferring the WAR File
 The built JavaWebApp.war artifact was securely copied from the build server to the home directory of the web server using scp with a PEM key for authentication.
@@ -140,13 +143,15 @@ Command list-applications executed successfully.
 ```
 
 
-Phase 4: Access the application
+**Phase 4: Access the application**
 Go to the web browser and give your ip-adress with portnumber and application name.
 ```
 <ip-adress>:8080/JavaWebApp
+```
 
 Now you will be able to acess the application
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/10588961-b338-48f6-90ba-ca518508944f" />
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/39eeb8f2-5776-4bb8-ba31-066e36a15ee3" />
+
