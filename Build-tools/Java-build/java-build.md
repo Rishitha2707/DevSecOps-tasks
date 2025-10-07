@@ -150,7 +150,7 @@ mvn package
 ```
 
 You will see the below output:
-
+<img width="1920" height="496" alt="Image" src="https://github.com/user-attachments/assets/f946a191-86d2-464d-b820-57de6774bbde" />
 
 The successful build will create a target folder in which .war file is stored. check for it.
 
@@ -160,6 +160,7 @@ step 4: copy your .pem file to your build server.
 cd /.downloads/
 scp -i <key.pem> <key.pem> ubuntu@<ip-address>:~
 ```
+<img width="1920" height="287" alt="Image" src="https://github.com/user-attachments/assets/2a55607a-1787-439f-bb0f-0d8309a75f12" />
 
 Step 5: Transfer the WAR File to Web Server
 
@@ -195,6 +196,10 @@ Go to web browser and give
 ```
 <ip-address:8080>
 ```
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/9141f98c-1872-4d7c-8b60-ac549568791e" />
+
+
 It should show you the tomcat configuration page.
 
 Step 7: Complete the configurations given in tomcat page.
@@ -239,9 +244,20 @@ Open your browser and visit:
 
 <your-ip-address:8080>
 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0a9fc875-040c-4275-b2de-b84db83c483d" />
+
 It will ask you for signin details. Give your signin details and you will be able to see tomcat page with the .war file name webapp-0.2 in this case.
 
 Click on webapp-0.2 and you will access the application.
 
 Step 10: Use the application
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/5dca377e-30d7-46c5-a6d3-7eca8340b43d" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/0b41008c-b33d-4c2d-ace2-06cb182cb922" />
+
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/a2aa47fd-21c9-4bfd-8e21-8e06d607fa77" />
+
+
 
