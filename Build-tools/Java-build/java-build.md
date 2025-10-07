@@ -250,6 +250,10 @@ It will ask you for signin details. Give your signin details and you will be abl
 
 Click on webapp-0.2 and you will access the application.
 
+Sign-in with the username and password:
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6186ab40-7d70-41dc-88ec-9f601bfbabcb" />
+
 Step 10: Use the application
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/5dca377e-30d7-46c5-a6d3-7eca8340b43d" />
