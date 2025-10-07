@@ -24,7 +24,7 @@ Server Setup
 
 
 
-3. Directory Structure
+## Directory Structure
 
 JavaWebCalculator/
 ├── src/
@@ -36,6 +36,7 @@ JavaWebCalculator/
 │           └── WEB-INF/web.xml
 ├── pom.xml
 └── README.md
+
 
 
 4. Steps to Build and Deploy
