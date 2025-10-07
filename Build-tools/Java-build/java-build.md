@@ -26,6 +26,7 @@ Server Setup
 
 ## Directory Structure
 
+```text
 JavaWebCalculator/
 ├── src/
 │   └── main/
