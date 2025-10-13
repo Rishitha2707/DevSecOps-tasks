@@ -44,7 +44,7 @@ Verify installation:
 node -v
 npm -v
 ```
-<img width="285" height="107" alt="Image" src="https://github.com/user-attachments/assets/6bf1f58c-4ba4-45b2-8410-4a352601ec35" />
+<img width="508" height="151" alt="Image" src="https://github.com/user-attachments/assets/2a0b3ac1-9483-4b97-961e-0eb4ab014258" />
 
 
 Step 3: Install Angular CLI
