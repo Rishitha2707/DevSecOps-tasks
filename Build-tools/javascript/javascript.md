@@ -179,7 +179,14 @@ http://<PRODUCTION_SERVER_PUBLIC_IP>/
 
 
 📦 Folder Structure
-<pre> ```bash AngularCalculator/ ├── src/ ├── dist/ │ └── angularCalc/ ├── package.json └── angular.json ``` </pre>
+<pre> ```
+AngularCalculator/
+├── src/
+├── dist/
+│   └── angularCalc/
+├── package.json
+└── angular.json
+ ``` </pre>
 
 
 🏁 Final Workflow Overview
