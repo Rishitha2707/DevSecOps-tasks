@@ -1,9 +1,9 @@
-🚀 Deploying a JavaScript (Angular) Application using Node, NPM, and Nginx
+**🚀 Deploying a JavaScript (Angular) Application using Node, NPM, and Nginx**
 
 This guide walks through the process of setting up a development environment, building an Angular application, and deploying it to a production server using Nginx.
+--------------------------------------------------------------------------------------------------------------------------------------------
 
-
-🧰 Prerequisites
+**🧰 Prerequisites**
 
 Before you begin, ensure you have the following:
 
@@ -17,6 +17,7 @@ SSH key pair for secure access (.pem file)
 
 Basic knowledge of Linux commands
 
+------------------------------------------------------------------------------------------------------------------------------------------
 
 ⚙️ 1. Setting up the Development Server
 Step 1: Set Hostname and Update Packages
@@ -160,13 +161,13 @@ sudo systemctl status nginx
 <img width="1443" height="425" alt="Image" src="https://github.com/user-attachments/assets/ef6d9e52-8ae4-49b8-ae82-c856bec90020" />
 
 
-✅ 5. Verify Deployment
+**✅ 5. Verify Deployment**
 Open your browser and visit:
 ```
 http://<PRODUCTION_SERVER_PUBLIC_IP>/
 ```
 
-🧾 Summary of Key Commands
+**🧾 Summary of Key Commands**
 | Task              | Command                                                 |
 | ----------------- | ------------------------------------------------------- |
 | Update packages   | `sudo apt update -y`                                    |
@@ -178,7 +179,7 @@ http://<PRODUCTION_SERVER_PUBLIC_IP>/
 
 
 
-📦 Folder Structure
+**📦 Folder Structure**
 <pre> ```
 AngularCalculator/
 ├── src/
@@ -189,7 +190,7 @@ AngularCalculator/
  ``` </pre>
 
 
-🏁 Final Workflow Overview
+**🏁 Final Workflow Overview**
 
 Development Server (Build Phase)
 → Install Node.js + Angular CLI
@@ -203,7 +204,7 @@ Production Server (Deploy Phase)
 
 
 
-🎯 Outcome
+**🎯 Outcome**
 
 You’ve successfully:
 
