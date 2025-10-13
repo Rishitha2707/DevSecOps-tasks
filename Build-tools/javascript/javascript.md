@@ -179,12 +179,7 @@ http://<PRODUCTION_SERVER_PUBLIC_IP>/
 
 
 📦 Folder Structure
-AngularCalculator/
-├── src/
-├── dist/
-│   └── angularCalc/
-├── package.json
-└── angular.json
+<pre> ``` AngularCalculator/ ├── src/ ├── dist/ │ └── angularCalc/ ├── package.json └── angular.json ``` </pre>
 
 
 
