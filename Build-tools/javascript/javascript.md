@@ -1,6 +1,7 @@
 **🚀 Deploying a JavaScript (Angular) Application using Node, NPM, and Nginx**
 
 This guide walks through the process of setting up a development environment, building an Angular application, and deploying it to a production server using Nginx.
+
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 **🧰 Prerequisites**
