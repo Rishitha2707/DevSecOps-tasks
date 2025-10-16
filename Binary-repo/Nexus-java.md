@@ -1,4 +1,4 @@
-<img width="385" height="130" alt="Screenshot 2025-10-16 150839" src="https://github.com/user-attachments/assets/ae2ed06f-949e-4f34-ad02-aca71e7b6c69" /><img width="1920" height="1080" alt="Screenshot (153)" src="https://github.com/user-attachments/assets/1e7b8d2f-0ba9-4bf9-9c99-5850a62e0559" />🚀 DevOps Project: Continuous Delivery Pipeline using Nexus Repository & Maven for Java Web Application
+🚀 DevOps Project: Continuous Delivery Pipeline using Nexus Repository & Maven for Java Web Application
 
 This project demonstrates the implementation of a Continuous Delivery (CD) pipeline using Sonatype Nexus Repository Manager 3, Apache Maven, and Apache Tomcat across two separate servers.
 
@@ -72,6 +72,7 @@ Nexus UI Configuration
       <img width="964" height="69" alt="Image" src="https://github.com/user-attachments/assets/9c769970-7188-486f-9815-82713b7b860a" />
 
     3. Set a new password (e.g., nexus).
+    
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/8288d2cd-2861-401e-b92e-d427902c3363" />
 
@@ -80,6 +81,7 @@ Nexus UI Configuration
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/bf27e6db-7f95-4fe0-a461-fd6283e13d5e" />
 
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3805b9b0-5342-4a9b-9800-54e06cd3c200" />
+
 
 Repository Used
 
@@ -128,6 +130,8 @@ sudo vi /etc/maven/settings.xml
 ```
 add this: for authentication to nexus
 <img width="385" height="130" alt="Image" src="https://github.com/user-attachments/assets/1d89e2de-8ebb-4585-9342-3eac0e9f278b" />
+
+
 3️⃣ Iteration 1 – Addition Feature (v0.0.1)
 ```
 # Download the first version from Nexus and deploy to Tomcat
