@@ -1,5 +1,5 @@
-**🚀 DevOps Project: Continuous Delivery Pipeline using Nexus Repository & Maven for Java Web Application
-**
+🚀 DevOps Project: Continuous Delivery Pipeline using Nexus Repository & Maven for Java Web Application
+
 This project demonstrates the implementation of a Continuous Delivery (CD) pipeline using Sonatype Nexus Repository Manager 3, Apache Maven, and Apache Tomcat across two separate servers.
 
 The project automates the build, versioning, and deployment process of a Java Web Calculator Application, following real-world DevOps practices.
