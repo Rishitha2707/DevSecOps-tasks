@@ -5,13 +5,14 @@ This project demonstrates the implementation of a Continuous Delivery (CD) pipel
 The project automates the build, versioning, and deployment process of a Java Web Calculator Application, following real-world DevOps practices.
 
 🏗️ Project Architecture:
-+-----------------------------+                 +-----------------------------+
-|       Nexus Server          |                 |     Build & Deploy Server   |
-| (Artifact Repository)       |                 | (Maven + Tomcat)            |
-|                             |                 |                             |
-|  - Nexus 3.79.0-09          |   <---- Push ---|  - Builds WAR using Maven   |
-|  - Stores WAR Artifacts     |   ---- Pull --->|  - Deploys to Tomcat        |
-+-----------------------------+                 +-----------------------------+
++-----------------------------+          +-----------------------------+
+|         Nexus Server        |          |     Build & Deploy Server   |
+|     (Artifact Repository)   |          |       (Maven + Tomcat)      |
+|                             |          |                             |
+| - Nexus 3.79.0-09           | <---- Push ---- | - Builds WAR using Maven |
+| - Stores WAR Artifacts      | ---- Pull ----> | - Deploys to Tomcat      |
++-----------------------------+          +-----------------------------+
+
 
 
 🖥️ Server 1: Nexus Repository Manager Setup
