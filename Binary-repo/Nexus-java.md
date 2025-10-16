@@ -1,4 +1,4 @@
-🚀 DevOps Project: Continuous Delivery Pipeline using Nexus Repository & Maven for Java Web Application
+<img width="385" height="130" alt="Screenshot 2025-10-16 150839" src="https://github.com/user-attachments/assets/ae2ed06f-949e-4f34-ad02-aca71e7b6c69" /><img width="1920" height="1080" alt="Screenshot (153)" src="https://github.com/user-attachments/assets/1e7b8d2f-0ba9-4bf9-9c99-5850a62e0559" />🚀 DevOps Project: Continuous Delivery Pipeline using Nexus Repository & Maven for Java Web Application
 
 This project demonstrates the implementation of a Continuous Delivery (CD) pipeline using Sonatype Nexus Repository Manager 3, Apache Maven, and Apache Tomcat across two separate servers.
 
@@ -35,10 +35,13 @@ Setup Commands:
 # 1. Verify Java installation
 java --version
 ```
+<img width="1080" height="88" alt="Image" src="https://github.com/user-attachments/assets/50d5c217-e54c-4ce2-bd46-c44cfb4cb4d7" />
+
 ```
 # 2. Download Nexus 3 tarball
 wget https://download.sonatype.com/nexus/3/nexus-unix-x86-64-3.79.0-09.tar.gz
 ```
+<img width="1456" height="379" alt="Image" src="https://github.com/user-attachments/assets/acaa626c-6004-4f6b-b269-c5524850d872" />
 
 ```
 # 3. Extract files
@@ -66,9 +69,17 @@ Nexus UI Configuration
         . Username: admin
 
         . Password: (from the admin.password file)
+      <img width="964" height="69" alt="Image" src="https://github.com/user-attachments/assets/9c769970-7188-486f-9815-82713b7b860a" />
 
     3. Set a new password (e.g., nexus).
 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/8288d2cd-2861-401e-b92e-d427902c3363" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/72278816-3ac6-4e94-a335-f248c9611c3d" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/bf27e6db-7f95-4fe0-a461-fd6283e13d5e" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3805b9b0-5342-4a9b-9800-54e06cd3c200" />
 
 Repository Used
 
@@ -91,6 +102,10 @@ Handles the building, versioning, and deployment of the Java Web Application usi
 | **Application Source**       | [Java Web Calculator App](https://github.com/mrtechreddy/Java-Web-Calculator-App.git) |
 | **Authentication for Nexus** | `admin:nexus`                                                                         |
 
+
+<img width="1100" height="264" alt="Image" src="https://github.com/user-attachments/assets/dd245041-9735-4025-bad5-f4e9ffaea1ff" />
+
+
 ⚙️ Step-by-Step Process
 1️⃣ Clone the Application
 ```
@@ -102,7 +117,17 @@ git clone https://github.com/mrtechreddy/Java-Web-Calculator-App.git
 cd apache-tomcat-9.0.111/
 cd webapps/
 ```
+```
+vi pom.xml
+```
+add this:(to tell maven that the artifact has to be deployed intot his particular repository)
+<img width="918" height="171" alt="Image" src="https://github.com/user-attachments/assets/982122be-3665-4ac6-91df-5570d8824330" />
 
+```
+sudo vi /etc/maven/settings.xml
+```
+add this: for authentication to nexus
+<img width="385" height="130" alt="Image" src="https://github.com/user-attachments/assets/1d89e2de-8ebb-4585-9342-3eac0e9f278b" />
 3️⃣ Iteration 1 – Addition Feature (v0.0.1)
 ```
 # Download the first version from Nexus and deploy to Tomcat
@@ -123,6 +148,13 @@ Built and deployed to Nexus:
 mvn clean install
 mvn deploy
 ```
+<img width="1471" height="189" alt="Image" src="https://github.com/user-attachments/assets/7d28645a-9758-4b32-ae32-a50902090d90" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/bae003d4-33ef-4419-a568-bbe7ca95211f" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/79884d75-4b24-43ef-82a5-50dc3923332f" />
+
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/509de463-ad94-4f23-841a-ead109575b4a" />
 
 4️⃣ Iteration 2 – Addition + Subtraction Feature (v0.0.2)
 ```
@@ -149,7 +181,8 @@ ls
 Added Subtraction logic.
 
 Updated pom.xml → artifactId webapp-add-sub, version 0.0.2
-
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d43f0b19-b5a4-4cb3-9177-5d7709210a57" />
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/6034cb5e-e181-4839-9697-e4ab0f3127d7" />
 
 
 5️⃣ Iteration 3 – Addition + Subtraction + Product Feature (v0.0.3)
@@ -176,7 +209,9 @@ wget http://admin:nexus@3.101.111.145:8081/repository/maven-releases/com/web/cal
 Added Multiplication (Product) feature.
 
 Updated version → 0.0.3, artifactId → webapp-add-sub-product
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/3b1ebaef-09e6-4975-91e3-dbd6f0e2b579" />
 
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/d8c0e2e6-20d0-404c-b524-458bc26c48ee" />
 
 📂 Final Deployment State
 
