@@ -1,15 +1,15 @@
-<img width="1154" height="262" alt="Screenshot 2025-10-21 143431" src="https://github.com/user-attachments/assets/36425914-b38a-46b3-8f4c-f0373f6bb518" />Java Project Code Quality Testing with SonarQube and Maven on Ubuntu
+**Java Project Code Quality Testing with SonarQube and Maven on Ubuntu**
 
 This guide explains how to set up SonarQube on an Ubuntu server and analyze a Java project using Maven. The example project is JavaWebCalculator.
 
-Prerequisites:
+**Prerequisites:**
     Ubuntu server (18.04, 20.04, or newer)
     sudo privileges
     Internet access to download SonarQube and Java
 
 
 
-Clone Java Project
+**Clone Java Project**
 Clone your project from GitHub:
 ```
 git clone https://github.com/akracad/JavaWebCalculator.git
@@ -24,7 +24,7 @@ ls src/main/java/mypackage/Calculator.java
 ls src/test/java/mypackage/CalculatorTest.java
 ```
 
-Install Java and Maven
+**Install Java and Maven**
 For SonarQube 6 and modern Maven plugins, use Java 8:
 ```
 sudo apt update
@@ -39,7 +39,7 @@ mvn --version
 <img width="1160" height="173" alt="Image" src="https://github.com/user-attachments/assets/343a5efc-5417-41ef-9b1d-5269fb259cb7" />
 
 
-Install and Configure SonarQube
+**Install and Configure SonarQube**
 1. Download SonarQube
 ```
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-6.7.7.zip
@@ -81,7 +81,7 @@ cd ~/sonarqube/bin/linux-x86-64/
 
 
 
-Run Maven Build and SonarQube Analysis
+**Run Maven Build and SonarQube Analysis**
 
 1. Build the project:
 ```
@@ -102,7 +102,7 @@ mvn sonar:sonar \
 <img width="1010" height="193" alt="Image" src="https://github.com/user-attachments/assets/06c57c27-8c3e-4087-a935-0d35d4807b94" />
 
 
-Access SonarQube Dashboard
+**Access SonarQube Dashboard**
 ```
 http://54.183.136.50:9000/dashboard?id=WebApp
 ```
