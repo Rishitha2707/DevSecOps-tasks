@@ -37,7 +37,7 @@ npm install
 
 Check Node.js and npm versions to confirm setup:
 
-``
+```
 node -v
 npm -v
 ```
@@ -53,6 +53,7 @@ export NODE_OPTIONS=--openssl-legacy-provider
 ```
 
 Now build the Angular project:
+
 ```
 npm run build
 ```
@@ -61,6 +62,7 @@ npm run build
 
 🧠 5. Set Up SonarQube Server
 Download and extract SonarQube (version 6.7.7 used here):
+
 ```
 cd ~
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-6.7.7.zip
@@ -69,6 +71,7 @@ unzip sonarqube-6.7.7.zip
 ```
 
 Start the SonarQube server:
+
 ```
 cd sonarqube-6.7.7/bin/linux-x86-64/
 ./sonar.sh start
@@ -76,6 +79,7 @@ cd sonarqube-6.7.7/bin/linux-x86-64/
 ```
 
 Access SonarQube in your browser:
+
 ```
 http://<your-server-ip>:9000
 ```
@@ -89,11 +93,13 @@ Password: admin
 
 📄 6. Create sonar-project.properties File
 Inside your AngularCalculator directory, create the configuration file:
+
 ```
 vi sonar-project.properties
 ```
 
 Paste the following content (update your own values):
+
 ```
 sonar.projectKey=js-test
 sonar.projectName=js-test
@@ -108,11 +114,13 @@ sonar.login=44e866a02733b6cdfe0bf7cf125bde49b0374f82
 
 🧮 7. Install Sonar Scanner
 Install the Sonar Scanner CLI globally using npm:
+
 ```
 sudo npm install -g sonar-scanner
 ```
 
 Verify installation:
+
 ```
 sonar-scanner -v
 ```
@@ -121,11 +129,13 @@ sonar-scanner -v
 
 🔍 8. Run SonarQube Scan
 From inside your project directory:
+
 ```
 sonar-scanner
 ```
 
 Then open your browser and navigate to:
+
 ```
 http://13.57.28.112:9000/dashboard?id=js-test
 ```
