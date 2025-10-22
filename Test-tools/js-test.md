@@ -20,6 +20,7 @@ npm -v
 🚀 2. Clone the JavaScript / Angular Project
 Clone the target repository you want to test.
 Here we use the AngularCalculator app as an example:
+
 ```
 git clone https://github.com/Ai-TechNov/AngularCalculator.git
 cd AngularCalculator
@@ -29,11 +30,13 @@ ls
 
 ⚙️ 3. Install Node.js Dependencies
 Install all required dependencies for the project:
+
 ```
 npm install
 ```
 
 Check Node.js and npm versions to confirm setup:
+
 ``
 node -v
 npm -v
@@ -44,6 +47,7 @@ npm -v
 If you face an error like
 Error: error:0308010C:digital envelope routines::unsupported
 during build, enable the OpenSSL legacy provider:
+
 ```
 export NODE_OPTIONS=--openssl-legacy-provider
 ```
