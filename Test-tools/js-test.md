@@ -15,6 +15,8 @@ java -version
 node -v
 npm -v
 ```
+<img width="785" height="89" alt="Image" src="https://github.com/user-attachments/assets/45238071-2b2e-41ad-acb0-5f416b4e3840" />
+
 
 
 🚀 2. Clone the JavaScript / Angular Project
@@ -34,6 +36,8 @@ Install all required dependencies for the project:
 ```
 npm install
 ```
+<img width="1078" height="246" alt="Image" src="https://github.com/user-attachments/assets/acabc886-f99b-4192-b0c6-4102ce09b11e" />
+
 
 Check Node.js and npm versions to confirm setup:
 
@@ -77,6 +81,8 @@ cd sonarqube-6.7.7/bin/linux-x86-64/
 ./sonar.sh start
 ./sonar.sh status
 ```
+<img width="891" height="146" alt="Image" src="https://github.com/user-attachments/assets/4a046ea2-901a-48b7-b2e5-e4c746ad80d5" />
+
 
 Access SonarQube in your browser:
 
@@ -109,6 +115,7 @@ sonar.sources=src
 sonar.host.url=http://13.57.28.112:9000
 sonar.login=44e866a02733b6cdfe0bf7cf125bde49b0374f82
 ```
+<img width="1091" height="639" alt="Image" src="https://github.com/user-attachments/assets/45d04c75-966b-4c18-96a1-7530030c679d" />
 
 
 
@@ -118,6 +125,8 @@ Install the Sonar Scanner CLI globally using npm:
 ```
 sudo npm install -g sonar-scanner
 ```
+<img width="897" height="68" alt="Image" src="https://github.com/user-attachments/assets/97af28f7-d0fc-4f1a-8ba1-09651be691db" />
+
 
 Verify installation:
 
@@ -133,6 +142,9 @@ From inside your project directory:
 ```
 sonar-scanner
 ```
+<img width="1318" height="165" alt="Image" src="https://github.com/user-attachments/assets/e23a76c5-8e87-4bd1-9711-1930ef4bdc74" />
+<img width="1276" height="232" alt="Image" src="https://github.com/user-attachments/assets/0732a68b-946a-4745-a7ee-02fc4a77074a" />
+
 
 Then open your browser and navigate to:
 
@@ -149,7 +161,9 @@ After the scan completes, you’ll get a SonarQube dashboard showing:
     Vulnerabilities 🔐
     Maintainability metrics ⚙️
     Coverage and duplication 📊
-
+    
+<img width="1873" height="425" alt="Image" src="https://github.com/user-attachments/assets/8fb67b73-3845-4f2a-b589-6e1dc108d9ca" />
+<img width="1908" height="1021" alt="Image" src="https://github.com/user-attachments/assets/56a85ebc-4a46-4c29-a75e-1814ab37ad95" />
 
 
 ✅ 10. Summary
