@@ -26,10 +26,10 @@ Before installation, ensure your system meets these requirements:
 
 Update and upgrade your system before installation.
 
-```
+
 sudo apt update -y
 sudo apt upgrade -y
-```
+
 
 
 🚀 Step 1: Update System Packages
