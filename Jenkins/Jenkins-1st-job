@@ -26,7 +26,7 @@ Before installation, ensure your system meets these requirements:
 
 Update and upgrade your system before installation.
 
-```bash
+```
 sudo apt update -y
 sudo apt upgrade -y
 ```
