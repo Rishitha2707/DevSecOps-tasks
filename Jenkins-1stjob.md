@@ -59,9 +59,7 @@ sudo apt update
 sudo apt install jenkins -y
 ```
 
-
-**🔄 Step 4: Start and Enable Jenkins Service
-**
+**🔄 Step 4: Start and Enable Jenkins Service**
 
 Start Jenkins:
 ```
@@ -111,11 +109,11 @@ Copy the password and paste it into the Jenkins setup web page.
 
 **🧩 Step 8: Install Suggested Plugins**
 
-After logging in:
+1. After logging in:
 
-Click Install suggested plugins
+2. Click Install suggested plugins
 
-Wait for plugin installation to complete (may take several minutes)
+3. Wait for plugin installation to complete (may take several minutes)
 
 
 
@@ -123,11 +121,11 @@ Wait for plugin installation to complete (may take several minutes)
 
 After plugins are installed:
 
-Fill Username, Password, Full name, Email
+1. Fill Username, Password, Full name, Email
 
-Click Save and Continue
+2. Click Save and Continue
 
-Click Start using Jenkins
+3. Click Start using Jenkins
 
 
 
@@ -152,23 +150,23 @@ Run a simple job that writes a file to the workspace (verifies workspace + Jenki
 
 **Step 1: Create a New Job**
 
-Go to Jenkins Dashboard
+1. Go to Jenkins Dashboard
 
-Click New Item
+2. Click New Item
 
-Enter name: First-Jenkins-Job
+3. Enter name: First-Jenkins-Job
 
-Choose Freestyle project
+4. Choose Freestyle project
 
-Click OK
+5. Click OK
 
 **Step 2: Configure the Job**
 
-Add a short description in General (optional).
+1. Add a short description in General (optional).
 
-Under Build → Add build step → Execute shell
+2. Under Build → Add build step → Execute shell
 
-Paste this shell script:
+3. Paste this shell script:
 ```
 #!/bin/sh
 echo "This is my 1st-job" > jenkins.txt
@@ -179,17 +177,17 @@ ls -la
 
 **Step 3: Save and Build**
 
-Click Save
+1. Click Save
 
-Click Build Now
+2. Click Build Now
 
-You will see a new build appear in Build History.
+3. You will see a new build appear in Build History.
 
 **Step 4: View Console Output**
 
-Click the build number (e.g., #1)
+1. Click the build number (e.g., #1)
 
-Click Console Output
+2. Click Console Output
 
 Expected snippet:
 ```
@@ -244,11 +242,13 @@ You can read build console and artifacts from server
 
 
 **🧰 Troubleshooting**
+
 Problem	Solution
-Jenkins not accessible on port 8080	Check firewall: sudo ufw allow 8080
-Jenkins failed to start	sudo journalctl -u jenkins --no-pager -n 200 and sudo systemctl restart jenkins
-Java version error	Verify java --version (must be ≥ 11)
-Plugin installation stuck	Restart Jenkins and check logs
+
+1. Jenkins not accessible on port 8080	Check firewall: sudo ufw allow 8080
+2. Jenkins failed to start	sudo journalctl -u jenkins --no-pager -n 200 and sudo systemctl restart jenkins
+3. Java version error	Verify java --version (must be ≥ 11)
+4. Plugin installation stuck	Restart Jenkins and check logs
 
 
 
