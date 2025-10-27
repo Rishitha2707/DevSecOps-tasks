@@ -1,0 +1,225 @@
+📘 Jenkins Installation and Configuration on Ubuntu
+
+🧩 Introduction
+Jenkins is an open-source automation server used to automate building, testing, and deploying software. It helps implement Continuous Integration (CI) and Continuous Deployment (CD) pipelines.
+
+
+⚙️ System Requirements
+Before installation, ensure your system meets these requirements:
+| Component | Requirement                     |
+| --------- | ------------------------------- |
+| OS        | Ubuntu 20.04 / 22.04 LTS        |
+| RAM       | Minimum 2 GB (4 GB recommended) |
+| CPU       | 2 cores minimum                 |
+| Disk      | 10 GB free space                |
+| Java      | OpenJDK 21                      |
+
+
+
+🚀 Step 1: Update System Packages
+```
+sudo apt update -y
+sudo apt upgrade -y
+```
+
+☕ Step 2: Install Java
+Jenkins runs on Java. Install OpenJDK 21
+```
+sudo apt install fontconfig openjdk-21-jre
+```
+
+Verify installation:
+
+```
+java --version
+```
+
+Expected output:
+```
+openjdk 21.0.8 2025-07-15
+OpenJDK Runtime Environment (build 21.0.8+9-Debian-1)
+OpenJDK 64-Bit Server VM (build 21.0.8+9-Debian-1, mixed mode, sharing)
+```
+
+
+📦 Step 3: Add Jenkins Repository and Key
+
+```
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt update
+sudo apt install jenkins
+```
+
+
+🔄 Step 4: Start and Enable Jenkins Service
+Start Jenkins:
+```
+sudo systemctl start jenkins
+```
+
+Enable Jenkins to start on boot:
+```
+sudo systemctl enable jenkins
+```
+
+Check Jenkins status:
+```
+sudo systemctl status jenkins
+```
+
+
+Step 5: Check if jenkins is running on Port 8080
+check with net-tools
+```
+sudo netstat -tnlp
+```
+
+
+🧭 Step 6: Access Jenkins Web UI
+Open your browser and navigate to:
+```
+http://<your-server-ip>:8080
+```
+
+
+🔑 Step 7: Unlock Jenkins
+Retrieve the initial admin password:
+```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+Copy the password and paste it into the browser.
+
+
+🧩 Step 9: Install Suggested Plugins
+After logging in:
+    1. Select “Install suggested plugins”
+    2. Wait for installation to complete.
+
+
+👤 Step 10: Create First Admin User
+After plugins install:
+    . Set username
+    . Set password
+    . Enter Full name & email
+    . Click Save and Continue
+Then click “Start using Jenkins”
+
+
+
+⚙️ Step 11: Configure Jenkins URL
+Set the Jenkins URL as:
+```
+http://<your-server-ip>:8080/
+```
+Click Save and Finish
+✅ Jenkins setup is now complete!
+
+
+
+
+🧱 Create Your First Jenkins Job
+🎯 Goal:
+Run a simple “Hello World” job to verify Jenkins is working.
+
+Step 1: Create a New Job
+    1. Go to Jenkins dashboard.
+    2. Click “New Item”
+    3. Enter an item name:
+        ```
+        First-Jenkins-Job
+        ```
+    4. Select Freestyle project
+    5. Click OK
+
+
+Step 2: Configure the Job
+    1. In the General section, add a short description:
+    2. Scroll down to Build section → click Add build step → select Execute shell
+    3. Enter this command:
+        ```
+        echo "This is my 1st-job" > jenkins.txt
+        ```
+
+
+Step 3: Save and Build  
+    . Click Save
+    . Then click Build Now
+You’ll see a build in progress under Build History.
+
+
+Step 4: View Console Output
+    . Click on the build number (e.g., #1)
+    . Select Console Output
+    You should see:
+    ```
+    This is my 1st-job
+    Finished: SUCCESS
+    ```
+
+
+
+
+🧱 Verify Workspace Folder and Job Output (Server Side)
+When you run a Jenkins job, Jenkins creates a workspace directory where all the job’s files and scripts are executed.
+
+
+1️⃣ Check Jenkins workspace directory
+Jenkins stores all job-related data under:
+```
+/var/lib/jenkins/
+```
+
+You should see folders like:
+```
+jobs  nodes  plugins  secrets  updates  workspace
+```
+
+2️⃣ Check if workspace folder exists
+```
+ls /var/lib/jenkins/workspace/
+```
+
+If you’ve created a job named 1st-job, you should see:
+
+```
+1st-job
+```
+
+
+3️⃣ Go inside your job’s workspace
+```
+cd /var/lib/jenkins/workspace/1st-Job
+ls
+```
+
+
+
+✅ Verification Complete
+This confirms:
+    1. Jenkins created the workspace directory
+    2. Your job executed successfully
+    3. You can view the job’s console output from the terminal itself
+
+
+
+🧰 Troubleshooting
+| Problem                             | Solution                                          |
+| ----------------------------------- | ------------------------------------------------- |
+| Jenkins not accessible on port 8080 | Check firewall: `sudo ufw allow 8080`             |
+| Jenkins failed to start             | Run: `sudo systemctl restart jenkins`             |
+| Java version error                  | Verify: `java -version` (must be ≥ 11)            |
+| Plugin installation stuck           | Restart Jenkins: `sudo systemctl restart jenkins` |
+
+
+
+🧾 Conclusion
+
+You’ve successfully:
+✅ Installed Jenkins on Ubuntu
+✅ Configured Jenkins and unlocked the dashboard
+✅ Created your first “Hello World” job
+
