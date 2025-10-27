@@ -17,6 +17,7 @@ Before installation, ensure your system meets these requirements:
 
 
 🚀 Step 1: Update System Packages
+
 ```
 sudo apt update -y
 sudo apt upgrade -y
