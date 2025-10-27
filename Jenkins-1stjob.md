@@ -1,4 +1,5 @@
-<img width="1919" height="627" alt="Screenshot 2025-10-27 152823" src="https://github.com/user-attachments/assets/73695311-23fe-40bd-b3f5-55bb4ac4025f" /># 📘 Jenkins Installation and Configuration on Ubuntu
+📘 Jenkins Installation and Configuration on Ubuntu
+
 
 ## 🧩 Introduction
 
