@@ -13,7 +13,7 @@ Before installation, ensure your system meets these requirements:
 | CPU       | 2 cores minimum                 |
 | Disk      | 10 GB free space                |
 | Java      | OpenJDK 21                      |
-
+| Port      | 8080                            |
 
 
 🚀 Step 1: Update System Packages
