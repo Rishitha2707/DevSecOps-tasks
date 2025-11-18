@@ -150,11 +150,17 @@ This custom Tomcat image is now the base image used for deployments.
 ## 7.1 Installed Required Plugins
 
 GitHub
+
 Docker Pipeline
+
 Pipeline
+
 Maven Integration
+
 SonarQube Scanner
+
 SSH Agent
+
 Nexus Artifact Uploader
 
 
