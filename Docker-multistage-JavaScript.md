@@ -28,6 +28,7 @@ WORKDIR /app
 RUN git clone https://github.com/Rishitha2707/Portfolio-Website.git .
 ```
 ✔️ Light-weight git client
+
 ✔️ Keeps the final image clean (code is not cloned inside Nginx)
 
 
@@ -42,7 +43,9 @@ RUN npm run build
 ```
 
 ✔️ Installs dependencies
+
 ✔️ Runs the production build
+
 ✔️ Generates optimized static files in build/
 
 
@@ -56,7 +59,9 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 ✔️ Fast & lightweight
+
 ✔️ Production-ready static hosting
+
 ✔️ Only Nginx + build output in the final image
 
 -------------------------------------------------------------------------------------------------------------------------------------
