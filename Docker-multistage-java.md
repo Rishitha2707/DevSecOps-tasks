@@ -115,10 +115,10 @@ docker build -t java-war-app .
 ```
 
 This will:
-. Clone the code
-. Build the WAR
-. Deploy into Tomcat
-. Output a final runnable image
+1. Clone the code
+2. Build the WAR
+3. Deploy into Tomcat
+4. Output a final runnable image
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
