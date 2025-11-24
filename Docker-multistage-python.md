@@ -118,9 +118,6 @@ sample/
 
 **OutPut**
 
-<img width="1919" height="451" alt="Screenshot 2025-11-24 103951" src="https://github.com/user-attachments/assets/225e076b-b6f6-486b-b6a1-ebc336802aa1" />
-
-
 <img width="1917" height="955" alt="Screenshot 2025-11-24 110217" src="https://github.com/user-attachments/assets/fe0a8a0a-df6d-4bbc-93f9-23e11a5504a9" />
 
 
