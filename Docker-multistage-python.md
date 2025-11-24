@@ -8,6 +8,8 @@ The Dockerfile automatically:
 2. Installs dependencies
 3. Runs Flask app inside a container
 
+<img width="1421" height="355" alt="Screenshot 2025-11-20 104042" src="https://github.com/user-attachments/assets/01050595-6840-4580-abba-1939f1c9c91b" />
+
 
 **🐳 Dockerfile (Multi-Stage Build: clone → build → run)**
 
