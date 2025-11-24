@@ -29,6 +29,8 @@ This makes the final image:
 . More secure
 . More production-friendly
 
+<img width="1421" height="355" alt="Screenshot 2025-11-20 104042" src="https://github.com/user-attachments/assets/8a87885d-96e3-4a87-8f13-cbf2323b2a4c" />
+
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 **🐳 Multi-Stage Dockerfile (Clone → Build → Deploy)**
@@ -120,6 +122,14 @@ This will:
 3. Deploy into Tomcat
 4. Output a final runnable image
 
+<img width="1457" height="369" alt="Screenshot 2025-11-21 143219" src="https://github.com/user-attachments/assets/219fbf83-3bc8-4605-9b99-58e1ac386797" />
+
+<img width="1428" height="418" alt="Screenshot 2025-11-21 143229" src="https://github.com/user-attachments/assets/13c5abc6-8dbd-41d4-805a-bccf78e6d001" />
+
+
+<img width="1475" height="515" alt="Screenshot 2025-11-21 143209" src="https://github.com/user-attachments/assets/d5cdf583-6688-4f82-bbf2-b9f5a509f19a" />
+
+
 --------------------------------------------------------------------------------------------------------------------------------------------
 
 **▶️ Running the Container**
@@ -131,6 +141,7 @@ Now access the application at:
 ```
 http://localhost:8080
 ```
+<img width="1907" height="1012" alt="Screenshot 2025-11-21 143201" src="https://github.com/user-attachments/assets/727aa533-9bdc-49f6-b2f6-cb86f34629bf" />
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
