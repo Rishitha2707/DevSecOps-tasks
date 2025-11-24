@@ -52,11 +52,17 @@ Run the following from your EC2 or local machine:
 docker build -t python-atm-app .
 ```
 
+<img width="874" height="674" alt="Screenshot 2025-11-21 170519" src="https://github.com/user-attachments/assets/4ab5e2c3-c87d-4b6c-8437-93969450ae8d" />
+
+
 **▶️ How to Run the Container**
 Run Python Flask app:
 ```
 docker run -d --name atm-app -p 5000:5000 python-atm-app
 ```
+
+<img width="1431" height="164" alt="Screenshot 2025-11-24 112916" src="https://github.com/user-attachments/assets/8160bad1-e825-4c93-bc4b-814955660919" />
+
 
 **🌐 Access the Application**
 From browser:
@@ -110,3 +116,12 @@ sample/
             └── withdraw.html
 ```
 
+**OutPut**
+
+<img width="1919" height="451" alt="Screenshot 2025-11-24 103951" src="https://github.com/user-attachments/assets/225e076b-b6f6-486b-b6a1-ebc336802aa1" />
+
+
+<img width="1917" height="955" alt="Screenshot 2025-11-24 110217" src="https://github.com/user-attachments/assets/fe0a8a0a-df6d-4bbc-93f9-23e11a5504a9" />
+
+
+<img width="1918" height="539" alt="Screenshot 2025-11-24 110247" src="https://github.com/user-attachments/assets/f3bb9e90-0a5d-4d26-9c32-76f897ee63f0" />
