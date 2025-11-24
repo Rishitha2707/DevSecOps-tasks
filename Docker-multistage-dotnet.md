@@ -74,6 +74,10 @@ Run the following command from the directory where your Dockerfile exists:
 ```
 docker build -t dotnet-demo-app .
 ```
+
+<img width="1057" height="74" alt="Screenshot 2025-11-24 113749" src="https://github.com/user-attachments/assets/7f651cdf-7863-4fd4-9dc2-df4ae8a0c651" />
+
+
 This performs:
 
 ✔ Cloning repository
@@ -93,12 +97,16 @@ This performs:
 docker run -d -p 8080:8080 dotnet-demo-app
 ```
 
+<img width="1462" height="83" alt="Screenshot 2025-11-24 113849" src="https://github.com/user-attachments/assets/c74173ab-fa15-4b24-9a04-bbfabe57697a" />
+
 
 3️⃣ Test the Application
 Open a browser and go to:
 ```
 http://<your-server-ip>:8080
 ```
+<img width="1919" height="653" alt="Screenshot 2025-11-24 113908" src="https://github.com/user-attachments/assets/783af0c4-a84f-4bcb-aa9e-a038671b6615" />
+
 
 **🎯 Advantages of Multi-Stage Docker Build**
 
