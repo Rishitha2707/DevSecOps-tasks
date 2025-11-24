@@ -113,6 +113,15 @@ Run the following command:
 ```
 docker build -t portfolio-site .
 ```
+
+<img width="1252" height="602" alt="Screenshot 2025-11-21 144310" src="https://github.com/user-attachments/assets/4bbf4eaf-37e4-418a-bedd-c0e48e3100ea" />
+
+
+<img width="1410" height="681" alt="Screenshot 2025-11-21 144301" src="https://github.com/user-attachments/assets/909e9e7e-3565-4f7b-94de-65348478656f" />
+
+
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 **▶️ How to Run the Container**
@@ -125,6 +134,10 @@ Now open your browser:
 ```
 http://localhost
 ```
+
+<img width="1919" height="961" alt="Screenshot 2025-11-21 144250" src="https://github.com/user-attachments/assets/f110ef24-ec2a-43a7-bf32-9ffad7f59fab" />
+
+
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 **📁 Folder Structure**
