@@ -9,6 +9,9 @@ The workflow includes:
 
 This produces a single optimized Docker image suitable for production hosting.
 
+<img width="1421" height="355" alt="Screenshot 2025-11-20 104042" src="https://github.com/user-attachments/assets/b032db02-3c9f-4926-a553-0a23bb1d2a57" />
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
 **🏗️ Project Overview**
