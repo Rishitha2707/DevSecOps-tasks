@@ -58,7 +58,7 @@ The pipeline automatically performs **build, test, code quality scan, artifact u
 ---
  
 ## Servers Setup
- 
+``` 
 | Server       | Type        | Ports       | Purpose         |
 
 |------------- |------------ |------------ |----------------|
@@ -70,7 +70,8 @@ The pipeline automatically performs **build, test, code quality scan, artifact u
 | Nexus        | t2.medium   | 22, 8081   | Artifact Repo   |
 
 | Tomcat       | t2.micro    | 22, 8080   | Application Deploy |
- 
+ ```
+
 ## Create jenkins-server
  
 <img width="602" height="273" alt="image" src="https://github.com/user-attachments/assets/75600db3-3656-4130-841c-1d96afc5d740" />
